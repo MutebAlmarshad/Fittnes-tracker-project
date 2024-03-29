@@ -1,0 +1,41 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<table>
+    <caption>Gym Workout Schedule</caption> 
+    <tr>
+        <th>Workout Type</th>
+        <th>Frequency (Days per Week)</th>
+        <th>Description</th>
+
+    </tr>
+    <tr>
+        <td>Push-Pull-Legs</td>
+        <td>3</td>
+        <td>Focuses on pushing (chest, shoulders, triceps) one day, pulling (back, biceps) another day, and legs on the third.</td>
+      </tr>
+      <tr>
+        <td>Full Body</td>
+        <td>2-3</td>
+        <td>Trains all major muscle groups in one session. Great for beginners or those short on time.</td>
+      </tr>
+      <tr>
+        <td>Upper-Lower</td>
+        <td>3-4</td>
+        <td>Trains upper body one day and lower body another. Offers more focus than full body.</td>
+      </tr>
+      <tr>
+        <td>Push/Pull/Legs (2x)</td>
+        <td>3</td>
+        <td>Focuses on pushing, pulling, and legs, but trains each twice per week with a rest day in between.</td>
+      </tr>
+      <tr>
+        <td>Bro Split</td>
+        <td>4-6</td>
+        <td>Focuses on individual muscle groups (chest, back, shoulders, legs, biceps, triceps) on separate days. Generally not recommended for beginners.</td>
+    </tr>
+
+</table>
+
+{% endblock content %}

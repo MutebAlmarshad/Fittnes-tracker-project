@@ -1,0 +1,20 @@
+{% extends "layouts/base.html" %}
+
+
+{% block stylesheets %}
+
+<style>
+
+</style>
+
+{% endblock stylesheets %}
+
+{% block content %}
+<p>Choose what service you want </p>
+    <ul>
+        <li><a href="{% url 'workout' %}">Workouts</a></li>
+        <li><a href="{% url 'diet' %}">Diets</a></li>
+    </ul>  
+
+{% endblock content %}
+
