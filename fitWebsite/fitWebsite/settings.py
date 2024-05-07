@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.fitnessApp'
 
 ]
 
@@ -121,6 +122,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR,"apps" + os.sep + "static")
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "apps" + os.sep + "templates" + os.sep + "static")]
 
 
 # Default primary key field type
