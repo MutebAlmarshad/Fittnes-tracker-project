@@ -6,6 +6,8 @@ urlpatterns = [
    path('workout', views.workout, name='workout'),
    path('diet', views.diet, name='diet'),
    path('survey',views.survey,name='survey'),
-   path('thanks/<str:rec>/<int:rating>/', views.thanks, name='thanks'),
+   path('thanks/<int:id>/', views.thanks, name='thanks'),
+   path('select-recommendations/', views.select_recommendations, name='select_recommendations'),
+   path('show-recommendations/', views.show_recommendations, name='show_recommendations'),
    
 ]

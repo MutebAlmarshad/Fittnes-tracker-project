@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+{% block title %} Select Recommendations {% endblock %}
+
+{% block content %}
+<h1>Select Recommendations</h1>
+<form method="post" action="{% url 'show_recommendations' %}">
+    
+  {% csrf_token %}
+
+  <label for="num_recommendations">Number of Recommendations:</label>
+
+  <select id="num_recommendations" name="num_recommendations">
+
+    <option value="5">5</option>
+
+    <option value="10" selected>10</option>
+
+    <option value="20">20</option>
+  </select>
+
+  <button type="submit">Show Recommendations</button>
+</form>
+
+{% endblock %}
